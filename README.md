@@ -1,6 +1,6 @@
-# vite-plugin-relay-lite
+# vite-plugin-relay-lite-clojurescript
 
-Vite plugin for more convenient Relay experience.
+Vite plugin for using Relay with ClojureScript.
 
 What this plugin does for you:
 - Generates artifacts on code changes
@@ -12,7 +12,7 @@ With only minimum configuration!
 ## Installation
 
 ```bash
-yarn add -D vite graphql vite-plugin-relay-lite
+yarn add -D vite graphql vite-plugin-relay-lite-clojurescript
 
 # Assumes the project already have relay-compiler and its configuration
 ```
@@ -21,7 +21,7 @@ yarn add -D vite graphql vite-plugin-relay-lite
 // vite.config.ts
 
 import { type UserConfig } from 'vite';
-import relay from 'vite-plugin-relay-lite';
+import relay from 'vite-plugin-relay-lite-clojurescript';
 
 const config: UserConfig = {
   plugins: [
@@ -89,7 +89,7 @@ Or you can set the `codegen` option to `false` to disable it.
 Plugin respects the `codegenCommand` option in the Relay config, it uses `relay-compiler` if not set.
 
 ## Acknowledgements
-
+This repo is a fork of [vite-plugin-relay-lite](https://github.com/cometkim/vite-plugin-relay-lite).
 The compilation has ported from [esbuild-plugin-relay](https://github.com/smartvokat/esbuild-plugin-relay), which was originally introduced from [a gist by Samuel Cormier-Iijima](https://gist.github.com/sciyoshi/34e5865f2523848f0d60b4cdd49382ee)
 
 ## LICENSE
