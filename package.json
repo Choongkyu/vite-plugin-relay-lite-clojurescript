@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-relay-lite-clojurescript",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Vite plugin for using Relay with ClojureScript",
   "source": "./src/plugin.ts",
   "main": "./lib/plugin.js",
